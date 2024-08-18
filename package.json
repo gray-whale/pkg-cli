@@ -5,7 +5,7 @@
     "dev": "pnpm --dir ./packages/pkg-cli dev",
     "lint": "eslint \"./packages/**/{src,test}/**/*.{vue,ts,tsx,js,mjs,cjs}\"",
     "build": "pnpm --filter=@mfejs/* run build",
-    "release": "pnpm --filter=@mfejs/* run release",
+    "release": "pnpm --dir ./packages/pkg-cli release",
     "build:docs": "vitepress build docs",
     "dev:docs": "vitepress dev docs"
   },
