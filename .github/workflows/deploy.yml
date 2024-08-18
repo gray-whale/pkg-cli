@@ -40,7 +40,4 @@ jobs:
             gh-pages
             # 部署目录为 VuePress 的默认输出目录
           FOLDER: site-dist
-          REPOSITORY_NAME: gray-whale/pkg-cli # 目标仓库
-          GIT_CONFIG_NAME: codeteenager
-          GIT_CONFIG_EMAIL: 1830702951@qq.com
           CLEAN: true
