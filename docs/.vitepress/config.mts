@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Pkg Cli",
   description: "组件开发工具",
+  base: '/pkg-cli/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "https://avatars.githubusercontent.com/u/133242655?s=200&v=4",
