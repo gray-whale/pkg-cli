@@ -27,11 +27,12 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@mfejs/pkg-cli": "^7.0.0",
+    "@mfejs/pkg-cli": "^1.0.0",
     "@vitepress-demo-preview/component": "^2.3.2",
     "@vitepress-demo-preview/plugin": "^1.2.3",
     "vue": "^3.3.4",
     "sass": "^1.49.7",
+    "less": "^4.2.0",
     "vitepress": "^1.3.3",
     "less": "^4.2.0"
   },

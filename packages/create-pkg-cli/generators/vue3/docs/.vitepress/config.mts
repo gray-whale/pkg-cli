@@ -26,5 +26,8 @@ export default defineConfig({
       md.use(componentPreview)
     }
   },
+  vite: {
+    plugins: [watchSrc()],
+  },
   outDir: './../site-dist',
 })

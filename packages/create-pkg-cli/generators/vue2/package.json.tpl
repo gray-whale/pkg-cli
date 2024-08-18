@@ -18,6 +18,7 @@
     "build-site": "pkg-cli build-site && npx gh-pages -d site-dist"
   },
   "author": "",
+  "packageManager": "yarn@1.22.22",
   "husky": {
     "hooks": {
       "pre-commit": "nano-staged",
@@ -32,7 +33,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
-    "@mfejs/pkg-cli": "^2.0.0",
+    "@mfejs/pkg-cli": "^1.0.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
     "vitepress": "^1.3.3"

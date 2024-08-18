@@ -10,7 +10,8 @@ module.exports = {
   },
   site: {
     title: '<%= name %>',
-    logo: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
+    logo: 'https://avatars.githubusercontent.com/u/133242655?s=200&v=4',
+    description: '示例组件库',
     nav: [
       {
         title: '开发指南',

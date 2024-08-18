@@ -12,23 +12,19 @@ export async function compileSite(isProd = false) {
     let items: { text: any; link: string }[] = [];
     if (Array.isArray(nav.items) && nav.items.length > 0) {
       items = nav.items.map((item) => {
-        const componentPath = join(DOCS_DIR, item.path);
-        if (existsSync(componentPath)) {
-          removeSync(componentPath);
+        //组件目标路径
+        const componentDestPath = join(DOCS_DIR, item.path);
+        //如果存在则删除
+        if (existsSync(componentDestPath)) {
+          removeSync(componentDestPath);
         }
-        const readmePath = join(SRC_DIR, `${item.path}/README.md`);
-        if (existsSync(readmePath)) {
-          copySync(readmePath, join(DOCS_DIR, `${item.path}/README.md`));
+        //组件源码路径
+        const componentSrcPath = join(SRC_DIR, item.path);
+        //如果存在则复制到固定位置
+        if (existsSync(componentSrcPath)) {
+          copySync(componentSrcPath, componentDestPath);
         }
-        const entryPath = join(SRC_DIR, `${item.path}/index.vue`);
-        if (existsSync(entryPath)) {
-          copySync(entryPath, join(DOCS_DIR, `${item.path}/index.vue`));
-        }
-        const demoPath = join(SRC_DIR, `${item.path}/demo`);
-        if (existsSync(demoPath)) {
-          copySync(demoPath, join(DOCS_DIR, `${item.path}/demo`));
-        }
-
+        //判断docs下的md文档存不存在，存在则直接返回，不存在则使用组件下的README.md
         if (existsSync(join(DOCS_DIR, `/${item.path}.md`))) {
           return {
             text: item.title,
