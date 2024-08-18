@@ -26,9 +26,10 @@ jobs:
         uses: actions/setup-node@v1 # 作用：安装nodejs
         with:
           node-version: ${{ matrix.node-version }} # 版本
+      - name: Install PNPM
+        run: npm install -g pnpm # 安装 PNPM
       # 生成静态文件
       - name: Build
-        run: npm install -g pnpm # 安装 PNPM
         run: pnpm install --legacy-peer-deps && pnpm run build:docs
 
       - name: Deploy # 步骤3
