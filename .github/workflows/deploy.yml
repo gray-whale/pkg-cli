@@ -30,7 +30,7 @@ jobs:
         run: npm install -g pnpm # 安装 PNPM
       # 生成静态文件
       - name: Build
-        run: pnpm install --legacy-peer-deps && pnpm run build:docs
+        run: pnpm install && pnpm run build:docs
 
       - name: Deploy # 步骤3
         uses: JamesIves/github-pages-deploy-action@releases/v3
