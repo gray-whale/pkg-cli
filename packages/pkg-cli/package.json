@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf ./lib && tsc",
-    "release": "rm -rf ./site/node_modules && pkg-cli release",
+    "release": "pkg-cli release",
     "prepare": "pnpm build"
   },
   "files": [
