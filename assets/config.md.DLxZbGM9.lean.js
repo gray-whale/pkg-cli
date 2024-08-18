@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.YJ5MLIJG.js";const g=JSON.parse('{"title":"配置指南","description":"","frontmatter":{},"headers":[],"relativePath":"config.md","filePath":"config.md"}'),l={name:"config.md"},e=n("",73),p=[e];function t(h,k,E,d,r,c){return a(),i("div",null,p)}const y=s(l,[["render",t]]);export{g as __pageData,y as default};

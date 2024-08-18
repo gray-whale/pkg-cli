@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as t}from"./chunks/framework.YJ5MLIJG.js";const u=JSON.parse('{"title":"命令","description":"","frontmatter":{},"headers":[],"relativePath":"commands.md","filePath":"commands.md"}'),n={name:"commands.md"},e=t("",19),l=[e];function p(h,k,d,o,r,c){return a(),i("div",null,l)}const g=s(n,[["render",p]]);export{u as __pageData,g as default};
