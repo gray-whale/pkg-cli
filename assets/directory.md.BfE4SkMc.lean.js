@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a3 as i}from"./chunks/framework.YJ5MLIJG.js";const E=JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"directory.md","filePath":"directory.md"}'),p={name:"directory.md"},e=i("",22),l=[e];function t(h,o,d,c,k,r){return n(),a("div",null,l)}const g=s(p,[["render",t]]);export{E as __pageData,g as default};

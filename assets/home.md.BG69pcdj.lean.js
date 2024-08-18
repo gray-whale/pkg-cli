@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.DclZkTcH.js";const F=JSON.parse('{"title":"Pkg CLI","description":"","frontmatter":{},"headers":[],"relativePath":"home.md","filePath":"home.md"}'),t={name:"home.md"},l=n("",15),h=[l];function p(k,e,r,d,E,o){return a(),i("div",null,h)}const c=s(t,[["render",p]]);export{F as __pageData,c as default};
