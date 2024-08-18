@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import {sidebar} from './sidebar'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
+import { genTemp } from '@mfejs/vite-plugin-gen-temp';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,7 +28,7 @@ export default defineConfig({
     }
   },
   vite: {
-    plugins: [watchSrc()],
+    plugins: [genTemp()],
   },
   outDir: './../site-dist',
 })

@@ -6,7 +6,7 @@ const { existsSync } = fse;
 // vite-plugin
 export function genTemp() {
   return {
-    name: 'vite-plugin-watch-src',
+    name: 'vite-plugin-gen-temp',
     config: () => {
       genTempDocs();
     },
