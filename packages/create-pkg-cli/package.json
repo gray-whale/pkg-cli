@@ -1,0 +1,46 @@
+{
+  "name": "create-pkg-cli",
+  "version": "1.0.0",
+  "description": "Create PKG CLI",
+  "main": "lib/index.js",
+  "bin": {
+    "create-pkg-cli": "./lib/index.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf ./lib && tsc",
+    "release": "pkg-cli release",
+    "prepare": "pnpm build"
+  },
+  "files": [
+    "lib",
+    "generators"
+  ],
+  "keywords": [
+    "mfejs",
+    "cli-template"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gray-whale/pkg-cli.git",
+    "directory": "packages/create-pkg-cli"
+  },
+  "bugs": "https://github.com/gray-whale/pkg-cli/issues",
+  "author": "codeteenager",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "rimraf": "^5.0.9",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "rslog": "^1.2.2",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "enquirer": "2.4.1",
+    "picocolors": "^1.0.1"
+  }
+}

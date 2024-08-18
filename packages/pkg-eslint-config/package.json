@@ -1,0 +1,35 @@
+{
+  "name": "@mfejs/eslint-config-pkg",
+  "version": "1.0.0",
+  "description": "eslint config",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "release": "pkg-cli release",
+    "update:deps": "pnpm update --latest --interactive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gray-whale/pkg-cli.git",
+    "directory": "packages/pkg-eslint-config"
+  },
+  "bugs": "https://github.com/gray-whale/pkg-cli/issues",
+  "author": "codeteenager",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0"
+  }
+}

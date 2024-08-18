@@ -1,23 +1,3 @@
-<p align="center">
-    <img alt="logo" src="https://avatars.githubusercontent.com/u/133242655?s=200&v=4" width="120" style="margin-bottom: 10px;">
-</p>
-
-<h1 align="center">Pkg Cli</h1>
-
-<p align="center">Vue PC端组件库开发工具</p>
-
-<!-- <p align="center">
-    <img src="https://img.shields.io/npm/v/vant?style=flat-square" alt="npm version" />
-    <img src="https://img.shields.io/codecov/c/github/youzan/vant/main.svg?style=flat-square&color=#4fc08d" alt="Coverage Status" />
-    <img src="https://img.shields.io/npm/dm/vant.svg?style=flat-square&color=#4fc08d" alt="downloads" />
-</p> -->
-
-<p align="center">
-  <a href="https://gray-whale.github.io/pkg-cli/">文档网站（GitHub）</a>
-</p>
-
----
-
 # Pkg CLI
 
 Pkg CLI 是一个基于 Vite 实现的 Vue 组件库构建工具，通过 Pkg CLI 可以快速搭建一套功能完备的 Vue 组件库。
@@ -88,3 +68,9 @@ bun add @mfejs/pkg-cli -D
   "browserslist": ["Chrome >= 51", "iOS >= 10"]
 }
 ```
+
+## 详细文档
+
+- [命令](/commands.md)
+- [配置指南](/config.md)
+- [目录结构](/directory.md)

@@ -1,0 +1,83 @@
+{
+  "name": "@mfejs/pkg-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "bin": {
+    "pkg-cli": "./bin.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf ./lib && tsc",
+    "release": "rm -rf ./site/node_modules && pkg-cli release",
+    "prepare": "pnpm build"
+  },
+  "files": [
+    "lib",
+    "cjs",
+    "bin.js"
+  ],
+  "keywords": [
+    "mfejs",
+    "package"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gray-whale/pkg-cli.git",
+    "directory": "packages/pkg-cli"
+  },
+  "bugs": "https://github.com/gray-whale/pkg-cli/issues",
+  "author": "codeteenager",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/less": "^3.0.6",
+    "@types/lodash": "^4.17.7",
+    "rimraf": "^5.0.9",
+    "vue": "^3.4.33"
+  },
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-typescript": "^7.24.7",
+    "@mfejs/eslint-config-pkg": "workspace:^",
+    "@rsbuild/core": "1.0.1-beta.3",
+    "@rsbuild/plugin-babel": "1.0.1-beta.3",
+    "@rsbuild/plugin-less": "1.0.1-beta.3",
+    "@rsbuild/plugin-sass": "1.0.1-beta.3",
+    "@rsbuild/plugin-vue": "1.0.1-beta.3",
+    "@rsbuild/plugin-vue-jsx": "1.0.1-beta.3",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/babel-plugin-jsx": "^1.2.2",
+    "autoprefixer": "^10.4.19",
+    "commander": "^12.1.0",
+    "enquirer": "2.4.1",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "hash-sum": "^2.0.0",
+    "husky": "^9.1.1",
+    "less": "^4.2.0",
+    "lodash": "^4.17.21",
+    "nano-staged": "^0.8.0",
+    "picocolors": "^1.0.1",
+    "postcss": "^8.4.39",
+    "postcss-load-config": "^6.0.1",
+    "prettier": "^3.3.3",
+    "rslog": "^1.2.2",
+    "rspack-plugin-virtual-module": "^0.1.13",
+    "terser": "^5.31.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.4",
+    "vue-router": "^4.4.0"
+  }
+}
