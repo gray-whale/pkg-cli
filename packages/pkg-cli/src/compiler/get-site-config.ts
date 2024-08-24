@@ -29,8 +29,6 @@ export function getSiteConfig() {
   return {
     ...vantConfig.site,
     title,
-    // `description` is used by the HTML ejs template,
-    // so it needs to be written explicitly here to avoid error: description is not defined
     description: vantConfig.site.description,
     meta: getHTMLMeta(vantConfig),
   };
