@@ -17,3 +17,4 @@ lib
 dist
 **/site-dist
 changelog.generated.md
+docs/.vitepress/cache
