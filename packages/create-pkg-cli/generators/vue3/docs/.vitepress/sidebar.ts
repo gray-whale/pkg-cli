@@ -2,8 +2,8 @@ export const sidebar = [
   {
     text: '开发指南',
     items: [
-      { text: '介绍', link: '/home/README.md' },
-      { text: '快速上手', link: '/quickstart/README.md' },
+      { text: '介绍', link: '/home.md' },
+      { text: '快速上手', link: '/quickstart.md' },
     ],
   },
   {

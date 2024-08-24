@@ -12,11 +12,11 @@ export default defineConfig({
     logo: "https://avatars.githubusercontent.com/u/133242655?s=200&v=4",
     nav: [
       { text: '首页', link: '/' },
-      { text: '组件', link: '/home' }
+      { text: '组件', link: '/components/home' }
     ],
-
-    sidebar,
-
+    sidebar: {
+      '/components/': sidebar,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gray-whale/pkg-cli' }
     ]
