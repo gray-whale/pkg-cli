@@ -5,8 +5,10 @@ import{_ as s,c as a,o as n,a3 as i}from"./chunks/framework.DclZkTcH.js";const E
 <span class="line"><span>│</span></span>
 <span class="line"><span>├─ docs               # 静态文档目录</span></span>
 <span class="line"><span>│   ├─ .vitepress    # vitepress配置文件</span></span>
-<span class="line"><span>│   ├─ home.md       # 文档首页</span></span>
-<span class="line"><span>│   └─ changelog.md  # 更新日志</span></span>
+<span class="line"><span>│   ├─ index.md       # 文档首页</span></span>
+<span class="line"><span>│   ├─ components     # 组件目录</span></span>
+<span class="line"><span>│         ├─ home.md     # 介绍</span></span>
+<span class="line"><span>│         └─ dialog      # 快速上手</span></span>
 <span class="line"><span>│</span></span>
 <span class="line"><span>├─ pkg.config.mjs    # PKG CLI 配置文件</span></span>
 <span class="line"><span>├─ package.json</span></span>
@@ -51,4 +53,4 @@ import{_ as s,c as a,o as n,a3 as i}from"./chunks/framework.DclZkTcH.js";const E
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;exclude&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;node_modules&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;**/test/**/*&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;**/demo/**/*&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div><p>成功生成类型声明后，请在 <code>package.json</code> 中添加类型入口声明：</p><div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">{</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;typings&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;lib/index.d.ts&quot;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,22),l=[e];function t(h,o,d,c,k,r){return n(),a("div",null,l)}const g=s(p,[["render",t]]);export{E as __pageData,g as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,22),l=[e];function t(o,h,d,c,k,r){return n(),a("div",null,l)}const g=s(p,[["render",t]]);export{E as __pageData,g as default};
