@@ -14,13 +14,15 @@ export function genTemp() {
   return {
     name: 'vite-plugin-gen-temp',
     config: () => {
-      genComponents();
-      // 监听单个文件
-      chokidar
-        .watch(PKG_CONFIG_FILE, {
-          persistent: true,
-        })
-        .on('change', () => genConfig());
+      if (process.env.NODE_ENV === 'development') {
+        genComponents();
+        // 监听单个文件
+        chokidar
+          .watch(PKG_CONFIG_FILE, {
+            persistent: true,
+          })
+          .on('change', () => genConfig());
+      }
     },
   };
 }
