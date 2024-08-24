@@ -29,7 +29,7 @@ export function genTemp() {
 
 function genComponents() {
   const globSource = `${join(process.cwd(), 'src')}/**`;
-  const docsDir = join(process.cwd(), 'docs');
+  const docsDir = join(process.cwd(), 'docs/components');
 
   const copyFile = (file: string) => {
     const destPath = join(docsDir, file.replace(new RegExp(`^src`), ''));
