@@ -12,8 +12,10 @@ project
 │
 ├─ docs               # 静态文档目录
 │   ├─ .vitepress    # vitepress配置文件
-│   ├─ home.md       # 文档首页
-│   └─ changelog.md  # 更新日志
+│   ├─ index.md       # 文档首页
+│   ├─ components     # 组件目录
+│         ├─ home.md     # 介绍
+│         └─ dialog      # 快速上手
 │
 ├─ pkg.config.mjs    # PKG CLI 配置文件
 ├─ package.json
